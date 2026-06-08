@@ -1,86 +1,45 @@
-# MTN-Up-2U
-DataHub GH
+# DataResell Pro
 
-Affordable Mobile Data Bundles in Ghana
+A Ghana data reseller platform — storefront, reseller dashboard, admin panel.
 
-Overview
+## Project Structure
 
-DataHub GH is a fast and reliable platform for purchasing affordable mobile data bundles for all major networks in Ghana. We provide instant delivery, competitive prices, and secure transactions.
+```
+dataresell-pro/
+├── index.html      ← HTML shell (loads CSS + JS)
+├── style.css       ← All styles
+├── app.js          ← All React components (JSX)
+├── vercel.json     ← Vercel routing config (SPA + /store/:slug)
+└── README.md
+```
 
-Whether you need data for browsing, streaming, gaming, or business, we have flexible packages that fit your needs.
+## How to Deploy (no laptop needed)
 
----
+### Step 1 — Push to GitHub (from phone/tablet)
 
-Available Data Bundles
+1. Go to [github.com](https://github.com) → Sign in (or create a free account)
+2. Click **+** → **New repository**
+3. Name it `dataresell-pro`, set to **Public**, click **Create repository**
+4. On the repo page, click **Add file → Upload files**
+5. Upload all 4 files: `index.html`, `style.css`, `app.js`, `vercel.json`
+6. Click **Commit changes**
 
-Bundle Size| Price
-1GB| GHS XX
-2GB| GHS XX
-3GB| GHS XX
-3.5GB| GHS XX
+### Step 2 — Deploy on Vercel (free)
 
----
+1. Go to [vercel.com](https://vercel.com) → Sign in with GitHub
+2. Click **Add New → Project**
+3. Select your `dataresell-pro` repo → Click **Import**
+4. Leave all settings as default (it auto-detects as a static site)
+5. Click **Deploy**
 
-Features
+Your site goes live at `https://dataresell-pro.vercel.app` (or your custom domain).
 
-- Instant data delivery
-- Affordable pricing
-- Simple and clean interface
-- Secure payments
-- Mobile-friendly website
-- Fast customer support
+### Step 3 — Custom Domain (optional)
 
----
+In Vercel → Project → Settings → Domains → Add your domain.
 
-Supported Networks
+## Notes
 
-- MTN Ghana
-- Telecel Ghana
-- AirtelTigo
-
----
-
-How It Works
-
-1. Select your preferred network
-2. Choose a data bundle
-3. Enter your phone number
-4. Make payment
-5. Receive your data instantly
-
----
-
-Technologies Used
-
-- HTML
-- CSS
-- JavaScript
-- Supabase / Firebase (Optional Backend)
-- Payment Integration API
-
----
-
-Future Improvements
-
-- User accounts
-- Transaction history
-- Referral system
-- Admin dashboard
-- Automated delivery system
-
----
-
-Contact
-
-For support or partnership inquiries:
-
-Email: support@datahubgh.com
-Phone: +233 XX XXX XXXX
-
----
-
-Disclaimer
-
-Data bundles are subject to network availability and provider policies. Delivery times may vary slightly during peak hours.
-
-© 2026 DataHub GH. All rights reserved.
+- The `/store/:slug` route works via the `vercel.json` rewrite rule
+- Supabase and Paystack keys are already embedded in `app.js`
+- To update the site: edit files on GitHub → Vercel auto-redeploys
