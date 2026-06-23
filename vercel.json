@@ -1,15 +1,9 @@
 {
-  "rewrites": [
-    { "source": "/store/:slug", "destination": "/index.html" },
-    { "source": "/(.*)", "destination": "/index.html" }
-  ],
-  "headers": [
+  "redirects": [
     {
       "source": "/(.*)",
-      "headers": [
-        { "key": "X-Content-Type-Options", "value": "nosniff" },
-        { "key": "X-Frame-Options", "value": "SAMEORIGIN" }
-      ]
+      "destination": "https://leemas.onhercules.app",
+      "permanent": false
     }
   ]
 }
