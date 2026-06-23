@@ -1,9 +1,8 @@
 {
-  "redirects": [
+  "rewrites": [
     {
       "source": "/(.*)",
-      "destination": "https://leemas.onhercules.app",
-      "permanent": false
+      "destination": "https://leemas.onhercules.app/$1"
     }
   ]
 }
