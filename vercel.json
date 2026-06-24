@@ -1,23 +1,9 @@
 {
-  "rewrites": [
+  "redirects": [
     {
       "source": "/(.*)",
-      "destination": "https://app-cjwig6g5wt1d.appmedo.com/$1"
-    }
-  ],
-  "headers": [
-    {
-      "source": "/(.*)",
-      "headers": [
-        {
-          "key": "X-Frame-Options",
-          "value": "ALLOWALL"
-        },
-        {
-          "key": "Content-Security-Policy",
-          "value": "frame-ancestors *"
-        }
-      ]
+      "destination": "https://app-cjwig6g5wt1d.appmedo.com/$1",
+      "permanent": false
     }
   ]
 }
