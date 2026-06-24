@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/(.*)",
-      "destination": "https://app-cjwig6g5wt1d.appmedo.com/$1"
+      "destination": "https://app-cjwig6g5wt1d.appmedo.com/?s=s/$1"
     }
   ]
 }
