@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/(.*)",
-      "destination": "https://leemas.onhercules.app/$1"
+      "destination": "https://app-cjwig6g5wt1d.appmedo.com/$1"
     }
   ]
 }
